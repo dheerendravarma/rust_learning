@@ -1,4 +1,5 @@
 use std::i32::MAX;
+use std::i128::MAX as i128_MAX;
 
 fn main() {
     // Variables are immutable by default
@@ -24,6 +25,7 @@ fn main() {
 
     // print the max value of i32
     println!("The max value of i32 is : {}", MAX);
+    println!("The max value of i128 is : {}", i128_MAX);
 
     // How to handle the variables with booleans
     let is_male: bool = true;
@@ -36,8 +38,8 @@ fn main() {
     }
 
     if is_male {
-        println("You are a Male");
+        println!("You are a Male");
     } else {
-        println("You are not a Male");
+        println!("You are not a Male");
     }
 }
