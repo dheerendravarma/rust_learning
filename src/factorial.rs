@@ -1,6 +1,6 @@
 use std::env;
 
-fn factorial(n: i64) -> i64 {
+fn factorial(n: i128) -> i128 {
     if n == 0 || n == 1 {
         return 1;
     }
@@ -14,7 +14,7 @@ fn main() {
         return;
     }
 
-    let number: i64 = args[1].parse().unwrap();
-    let result = factorial(number);
+    let number: i128 = args[1].parse().unwrap();
+    let result: i128 = factorial(number);
     println!("The factorial of {} is {}", number, result);
 }
